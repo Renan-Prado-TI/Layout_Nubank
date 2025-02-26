@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #820ad1;
+}
+main{
+    background-color: #ffffff;
+    height: 80vh;
+}
+#header-icones{
+    padding-top: 6vh;
+    height: 7vh;
+    align-items: center;
+    display: flex;
+}
+#header-icons-esquerda{
+    flex: 1;    
+}
+.header-icon-esquerda{
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+#header-icons-direita{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.header-icon-direita{
+    margin-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+#header-nome{
+    clear: both;
+    height: 7vh;
+    align-items: center;
+    display: flex;
+    color: white;
+}
