@@ -1,29 +1,44 @@
-# Layout Nubank
+git commit -m "Atualização completa do projeto: layout finalizado, README estilizado e funcionalidades implementadas"
+git push# 📱 Layout Nubank
 
-Projeto de estudo para recriar o layout da interface do Nubank usando HTML e CSS.
+![GitHub repo size](https://img.shields.io/github/repo-size/Renan-Prado-TI/Layout_Nubank)
+![GitHub language count](https://img.shields.io/github/languages/count/Renan-Prado-TI/Layout_Nubank)
+![GitHub top language](https://img.shields.io/github/languages/top/Renan-Prado-TI/Layout_Nubank)
 
-## Tecnologias utilizadas
+## 🎯 Descrição
+
+Este projeto é uma reprodução do layout mobile do Nubank, desenvolvido durante a disciplina de Linguagem de Programação. O layout foi criado usando HTML5 e CSS3, com foco em responsividade e experiência do usuário.
+
+## 📋 Funcionalidades
+
+- 🏦 Interface principal com saldo e informações da conta
+- 📊 Seção de ações rápidas (Pix, Pagar, Transferir, Depositar)
+- 💳 Seção de cartões de crédito
+- 📱 Design responsivo para dispositivos móveis
+
+## 🛠️ Tecnologias Utilizadas
+
 - HTML5
 - CSS3
-- Font Awesome (ícones)
+- Font Awesome (para ícones)
 
-## Funcionalidades implementadas
-- Header com menu de usuário
-- Seção de saldo com ícone de seta
-- Carrossel de ações (Pix, Pagar, Transferir, Depositar, Pegar emprestado)
-- Container de cartões
-- Footer com navegação
+## 🚀 Como Executar
 
-## Status do Projeto
-Em desenvolvimento - Versão inicial
+1. Clone o repositório:
+```bash
+git clone https://github.com/Renan-Prado-TI/Layout_Nubank.git
+```
 
-## Como visualizar
-1. Clone o repositório
-2. Abra o arquivo `index.html` em um navegador web
+2. Abra o arquivo `index.html` em um navegador web.
 
-## Estrutura do projeto
-Layout_Profissa/
-├── index.html
-├── CSS/
-│   └── style.css
-└── README.md
+## 📱 Visualização
+
+![Screenshot do layout](https://raw.githubusercontent.com/Renan-Prado-TI/Layout_Nubank/main/screenshot.png)
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+Desenvolvido por Renan Prado TI

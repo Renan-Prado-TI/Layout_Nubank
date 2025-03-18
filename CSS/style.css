@@ -43,13 +43,49 @@ main {
     padding: 1rem;
 }
 
-.balance-section {
+.div {
     background-color: white;
     padding: 1.5rem;
     border-radius: 10px;
     margin-bottom: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
+}
+
+.div .container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.div h2 {
+    color: #000000;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.div .balance-arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.div .balance-arrow i {
+    color: #000000;
+    font-size: 1rem;
+}
+
+.div .balance-amount {
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    text-align: left;
+    position: relative;
+    margin-top: 1rem;
 }
 
 .balance-header {
@@ -107,60 +143,58 @@ main {
 }
 
 .action-card {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.action-icon {
-    font-size: 2rem;
-    color: #820ad1;
-    margin-bottom: 0.5rem;
-}
-
-.actions-carousel {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-}
-
-.carousel-track {
-    display: flex;
-    gap: 1rem;
-    padding: 0 1rem;
-}
-
-.action-card {
     background-color: #f8f8f8;
-    padding: 1rem;
+    padding: 0.75rem;
     border-radius: 50%;
-    min-width: 100px;
+    min-width: 80px;
     text-align: center;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 80px;
+    transition: all 0.3s ease;
+}
+
+.action-card:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
 }
 
 .action-icon {
     font-size: 1.5rem;
     color: #820ad1;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .action-card p {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #666;
+    text-align: center;
+}
+
+.Container-Carrossel {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+    align-items: center;
 }
 
 .scroll-indicator {
@@ -176,11 +210,166 @@ main {
     justify-content: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.scroll-indicator:hover {
+    background-color: #f8f8f8;
+    transform: scale(1.1);
 }
 
 .scroll-indicator i {
     color: #820ad1;
     font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.scroll-indicator:hover i {
+    transform: rotate(180deg);
+}
+
+.new-container {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.new-container .container-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.new-container .container-header i {
+    color: #000000;
+    font-size: 1.2rem;
+}
+
+.new-container h3 {
+    color: #000000;
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.credit-card-container {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.credit-card-container .container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.credit-card-container .container-header i {
+    color: #000000;
+    font-size: 1.2rem;
+}
+
+.credit-card-container h3 {
+    color: #000000;
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.credit-card-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #000000;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.credit-card-title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.credit-card-arrow {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.credit-card-arrow i {
+    color: #000000;
+    font-size: 1rem;
+}
+
+.credit-card-title h3 {
+    color: #000000;
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.credit-card-title h3 i {
+    color: #000000;
+    font-size: 0.8rem;
+}
+
+.fatura-text {
+    font-weight: bold;
+    color: #666666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.fatura-amount {
+    color: #000000;
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.Container-Meuscartoes {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.Container-Meuscartoes .container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.Container-Meuscartoes .container-header .header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Container-Meuscartoes .container-header i {
+    color: #820ad1;
+    font-size: 1rem;
+}
+
+.Container-Meuscartoes .container-header h3 {
+    color: #820ad1;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 footer {
@@ -190,6 +379,7 @@ footer {
     right: 0;
     background-color: white;
     padding: 1rem;
+    border-top: 1px solid #eee;
     display: flex;
     justify-content: space-around;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
